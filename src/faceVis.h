@@ -14,20 +14,19 @@ public: // place public functions or variables declarations here
     void draw(int picky, int wave);    // draw method, this where you'll do the object's drawing
     void setup(ofImage img);
     
-    // variables
-    float x;      // position
-    float y;
 
     float rms;
-    int dim;      // size
     int w;
     int h;
     int offset;
+    int cellsize;
+    
+    ofImage texImage;
     
     vector<float> xx;
     vector<float> size;
     
-      ofxDelaunay triangulation;
+    ofxDelaunay triangulation;
     
     faceVis(); // constructor - used to initialize an object, if no properties are passed
     //               the program sets them to the default value
